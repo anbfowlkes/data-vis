@@ -4,6 +4,7 @@ import LoadingAndParsing from './Components/LoadingAndParsing'
 import VegaLite from './Components/VegaLite'
 import VisualizingData from './Components/VisualizingData'
 import VisualizingData2 from './Components/VisualizingData2'
+import MakingABarChart from './Components/MakingABarChart'
 
 
 
@@ -13,7 +14,8 @@ function App() {
       {/* <MouseFollower /> */}
       {/* <LoadingAndParsing /> */}
       {/* <VisualizingData /> */}
-      <VisualizingData2 />
+      {/* <VisualizingData2 /> */}
+      <MakingABarChart />
     </div>
   );
 }
