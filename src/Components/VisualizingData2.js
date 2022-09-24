@@ -33,7 +33,6 @@ const VisualizingData2 = () => {
     let centerX = width / 2
     let centerY = height / 2
 
-    let colorPie = pie().value(1)
 
     let pieArc = arc()
         .innerRadius(0)
@@ -42,12 +41,29 @@ const VisualizingData2 = () => {
     return (
         <svg width={width} height={height}>
             <g transform={`translate(${centerX},${centerY})`}>
-                {colorPie(data).map((d) => {
-                    return <path key={c++} fill={d.data['RGB hex value']} d={pieArc(d)}></path>
+                {data.map((d, i) => {
+                    return (<path key={c++} 
+                        fill={d['RGB hex value']} 
+                        d={pieArc({
+                            startAngle: i / data.length * 2 * Math.PI,
+                            endAngle: (i + 1) / data.length * 2 * Math.PI
+                        })} />)
                 })}
             </g>
         </svg>
     )
+
+    // let colorPie = pie().value(1)
+
+    // return (
+    //     <svg width={width} height={height}>
+    //         <g transform={`translate(${centerX},${centerY})`}>
+    //             {colorPie(data).map((d) => {
+    //                 return <path key={c++} fill={d.data['RGB hex value']} d={pieArc(d)}></path>
+    //             })}
+    //         </g>
+    //     </svg>
+    // )
 
 }
 
