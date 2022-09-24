@@ -2,6 +2,7 @@ import * as d3 from 'd3'
 import { useState, useEffect } from 'react'
 import { csv } from 'd3'
 
+// number 3
 const VisualizingData = () => {
 
     let [data, setData] = useState(null)

@@ -2,6 +2,8 @@ import * as d3 from 'd3'
 import { useState, useEffect } from 'react'
 import { csv } from 'd3'
 
+
+// number 2
 const LoadingAndParsing = () => {
 
     const csvUrl = 'https://gist.githubusercontent.com/curran/b236990081a24761f7000567094914e0/raw/cssNamedColors.csv'

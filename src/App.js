@@ -5,7 +5,7 @@ import VegaLite from './Components/VegaLite'
 import VisualizingData from './Components/VisualizingData'
 import VisualizingData2 from './Components/VisualizingData2'
 import MakingABarChart from './Components/MakingABarChart'
-
+import AddingMarginsAndAxes from './Components/AddingMarginsAndAxes'
 
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
       {/* <LoadingAndParsing /> */}
       {/* <VisualizingData /> */}
       {/* <VisualizingData2 /> */}
-      <MakingABarChart />
+      {/* <MakingABarChart /> */}
+      <AddingMarginsAndAxes />
     </div>
   );
 }

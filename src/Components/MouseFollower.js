@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
 
-
+// number 1
 const MouseFollower = () => {
 
   const width = 960;

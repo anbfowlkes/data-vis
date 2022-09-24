@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react'
 import { csv, scaleBand, scaleLinear, max } from 'd3'
 
+// number 5
 let MakingABarChart = () => {
 
     let width = 960
