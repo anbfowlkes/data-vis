@@ -10,6 +10,7 @@ import RefactoredBarChart from './RefactoredBarChart/RefactoredBarChart'
 import StylizedBarChart from './StylizedBarChart/StylizedBarChart'
 import ScatterPlot from './ScatterPlot/ScatterPlot'
 import WorkingWithTime from './WorkingWithTime/WorkingWithTime'
+import LineChart from './LineChart/LineChart'
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
       {/* <RefactoredBarChart /> */}
       {/* <StylizedBarChart /> */}
       {/* <ScatterPlot /> */}
-      <WorkingWithTime />
+      {/* <WorkingWithTime /> */}
+      <LineChart />
     </div>
   );
 }
