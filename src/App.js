@@ -8,6 +8,7 @@ import MakingABarChart from './Components/MakingABarChart'
 import AddingMarginsAndAxes from './Components/AddingMarginsAndAxes'
 import RefactoredBarChart from './RefactoredBarChart/RefactoredBarChart'
 import StylizedBarChart from './StylizedBarChart/StylizedBarChart'
+import ScatterPlot from './ScatterPlot/ScatterPlot'
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
       {/* <MakingABarChart /> */}
       {/* <AddingMarginsAndAxes /> */}
       {/* <RefactoredBarChart /> */}
-      <StylizedBarChart />
+      {/* <StylizedBarChart /> */}
+      <ScatterPlot />
     </div>
   );
 }
