@@ -6,6 +6,8 @@ import VisualizingData from './Components/VisualizingData'
 import VisualizingData2 from './Components/VisualizingData2'
 import MakingABarChart from './Components/MakingABarChart'
 import AddingMarginsAndAxes from './Components/AddingMarginsAndAxes'
+import RefactoredBarChart from './RefactoredBarChart/RefactoredBarChart'
+import StylizedBarChart from './StylizedBarChart/StylizedBarChart'
 
 
 function App() {
@@ -16,7 +18,9 @@ function App() {
       {/* <VisualizingData /> */}
       {/* <VisualizingData2 /> */}
       {/* <MakingABarChart /> */}
-      <AddingMarginsAndAxes />
+      {/* <AddingMarginsAndAxes /> */}
+      {/* <RefactoredBarChart /> */}
+      <StylizedBarChart />
     </div>
   );
 }
