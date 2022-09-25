@@ -2,6 +2,7 @@ export const AxisLeft = ( {yScale} ) => {
     return(
         yScale.domain().map((tickValue) => {
             return (
+                <g className='tick'>
                     <text 
                         key={tickValue}
                         style={{textAnchor: 'end'}} 
@@ -10,6 +11,7 @@ export const AxisLeft = ( {yScale} ) => {
                         y={yScale(tickValue) + yScale.bandwidth() / 2}>
                             {tickValue}
                     </text>
+                </g>
                 )
             })
     )
