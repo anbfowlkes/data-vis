@@ -1,13 +1,13 @@
 import { useState, useCallback, useEffect } from 'react'
-import { csv, scaleLinear, max, format, extent } from 'd3'
+import { csv, scaleLinear, scaleTime, max, timeFormat, extent } from 'd3'
 import { useData } from './useData'
 import { AxisBottom } from './AxisBottom'
 import { AxisLeft } from './AxisLeft'
 import { Marks } from './Marks'
-import './ScatterPlot.css'
+import './WorkingWithTime.css'
 
-// number 9
-let ScatterPlot = () => {
+// number 10
+let WorkingWithTime = () => {
 
     let data = useData()
 
@@ -24,12 +24,12 @@ let ScatterPlot = () => {
     // the 'd' bellow represents one element (row) of the data
     //we're using a band scale which is useful for ordinal data
 
-    const xValue = (d) => d.sepal_length
-    const yValue = (d) => d.sepal_width
+    const xValue = (d) => d.timestamp
+    const yValue = (d) => d.temperature
 
     //xValue is a function that takes in a row of the data and sends it to the sepal_length, then what happens below is we say we want to go from the min of these values to the max for our xScale domain on our scatterchart. The xValue function is an accessor which tells the computer what we're basing the min and max off of in the data
     
-    let xScale = scaleLinear()
+    let xScale = scaleTime()
         .domain(extent(data, xValue))
         .range([0, innerWidth])
         .nice()
@@ -37,10 +37,10 @@ let ScatterPlot = () => {
         
     let yScale = scaleLinear()
         .domain(extent(data, yValue))
-        .range([0, innerHeight])
+        .range([innerHeight, 0])
 
-    const xAxisLabel = 'Sepal Length'
-    const yAxisLabel = 'Sepal Width'
+    const xAxisLabel = 'Time'
+    const yAxisLabel = 'Temperature'
 
     const xAxisLabelOffset = 55
     const yAxisLabelOffset = 50
@@ -48,7 +48,8 @@ let ScatterPlot = () => {
     console.log('ticks console.log: ', xScale.ticks())
     console.log('yScale domain console.log: ', yScale.domain())
 
-    const xAxisTickFormatter = n => format('.2s')(n).replace('G','B')
+   
+    const xAxisTickFormatter = timeFormat('%a')
 
     return (
         <svg width={width} height={height} >
@@ -101,4 +102,4 @@ let ScatterPlot = () => {
     )
 }
 
-export default ScatterPlot
+export default WorkingWithTime

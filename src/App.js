@@ -9,6 +9,7 @@ import AddingMarginsAndAxes from './Components/AddingMarginsAndAxes'
 import RefactoredBarChart from './RefactoredBarChart/RefactoredBarChart'
 import StylizedBarChart from './StylizedBarChart/StylizedBarChart'
 import ScatterPlot from './ScatterPlot/ScatterPlot'
+import WorkingWithTime from './WorkingWithTime/WorkingWithTime'
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       {/* <AddingMarginsAndAxes /> */}
       {/* <RefactoredBarChart /> */}
       {/* <StylizedBarChart /> */}
-      <ScatterPlot />
+      {/* <ScatterPlot /> */}
+      <WorkingWithTime />
     </div>
   );
 }
