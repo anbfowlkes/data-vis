@@ -13,3 +13,6 @@ get data from a spreadsheet:
 - go to GitHubGist and copy the file in with ctrl+a -> ctrl+c
 - press Create Public Gist
 - press Raw
+
+npm install react-dropdown
+also inserted <link href="https://www.unpkg.com/react-dropdown@1.11.0/style.css" rel="stylesheet" /> to index.html to include styling

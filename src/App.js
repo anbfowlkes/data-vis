@@ -13,6 +13,7 @@ import WorkingWithTime from './WorkingWithTime/WorkingWithTime'
 import LineChart from './LineChart/LineChart'
 import Menus from './Menus/Menus'
 import ScatterPlotWithMenus from './ScatterPlotWithMenus/ScatterPlotWithMenus'
+import PolishedScatterPlotWithMenus from './PolishedScatterPlotWithMenus/PolishedScatterPlotWithMenus'
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
       {/* <WorkingWithTime /> */}
       {/* <LineChart /> */}
       {/* <Menus /> */}
-      <ScatterPlotWithMenus />
+      {/* <ScatterPlotWithMenus /> */}
+      <PolishedScatterPlotWithMenus />
     </div>
   );
 }
