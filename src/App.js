@@ -11,6 +11,7 @@ import StylizedBarChart from './StylizedBarChart/StylizedBarChart'
 import ScatterPlot from './ScatterPlot/ScatterPlot'
 import WorkingWithTime from './WorkingWithTime/WorkingWithTime'
 import LineChart from './LineChart/LineChart'
+import Menus from './Menus/Menus'
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
       {/* <StylizedBarChart /> */}
       {/* <ScatterPlot /> */}
       {/* <WorkingWithTime /> */}
-      <LineChart />
+      {/* <LineChart /> */}
+      <Menus />
     </div>
   );
 }
