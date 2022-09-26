@@ -1,0 +1,26 @@
+.tick line {
+    stroke: #C0C0BB;
+}
+
+.tick text {
+    fill: #635F5D;
+    font-family: 'Poppins'
+}
+
+.mark {
+    fill: #137B80
+}
+
+.axis-label {
+    font-family: 'Poppins';
+    /* font-size: 2.5em; */
+    fill: #635F5D
+}
+
+label, select {
+    font-size: 3rem;
+}
+
+select option {
+    font-size: rem;
+}
