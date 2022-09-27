@@ -26,13 +26,13 @@ function App() {
       {/* <MakingABarChart /> */}
       {/* <AddingMarginsAndAxes /> */}
       {/* <RefactoredBarChart /> */}
-      {/* <StylizedBarChart /> */}
+      <StylizedBarChart />
       {/* <ScatterPlot /> */}
       {/* <WorkingWithTime /> */}
       {/* <LineChart /> */}
       {/* <Menus /> */}
       {/* <ScatterPlotWithMenus /> */}
-      <PolishedScatterPlotWithMenus />
+      {/* <PolishedScatterPlotWithMenus /> */}
     </div>
   );
 }
